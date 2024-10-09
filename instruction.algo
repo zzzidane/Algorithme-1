@@ -1,0 +1,25 @@
+// Variables
+longueur : entier
+nombreMots : entier
+nombreVoyelles : entier
+caractere : caractere
+
+Début
+    longueur := 0
+    nombreMots := 1
+    nombreVoyelles := 0
+    Itération
+        Lire caractere
+        longueur := longueur + 1
+
+        si caractere = ' ' Alors
+            nombreMots := nombreMots + 1
+        Sinon Si caractere = 'a' OU  caractere = 'e' OU caractere = 'i' OU caractere= 'o' OU caractere = 'u' OU = 'y' Alors
+            nombreVoyelles := nombreVoyelles + 1
+        Fin Si
+    Jusqu'à caractere = '.'
+
+    Afficher "La longueur de la phrase :", longueur
+    Afficher "Le nombre de mots :", nombreMots
+    Afficher "Le nombre de voyelles :", nombreVoyelles
+Fin
